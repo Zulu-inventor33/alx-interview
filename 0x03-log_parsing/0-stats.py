@@ -42,7 +42,7 @@ def update_metrics(line, total_file_size, status_codes_stats):
     '''This updates the metrics from a given HTTP request log.
 
     Args:
-        line (str): This is the line of input from which to retrieve the metrics.
+        line (str): Input line from which to retrieve the metrics.
 
     Returns:
         int: This is new total file size.
