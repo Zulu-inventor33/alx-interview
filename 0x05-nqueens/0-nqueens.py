@@ -3,7 +3,7 @@ import sys
 
 
 def is_safe(board, row, col, n):
-    """Check if it's safe to place a queen at board[row][col]."""
+    """Checking if it's safe to place a queen at board[row][col]."""
     for i in range(row):
         # Check column and diagonals
         if board[i] == col or \
@@ -14,7 +14,7 @@ def is_safe(board, row, col, n):
 
 
 def solve_nqueens(n):
-    """Solve the N Queens puzzle and print all solutions."""
+    """Solving the N Queens puzzle andd printing all solutions."""
     board = [-1] * n  # Initialize the board with no queens placed
     solutions = []
 
@@ -35,7 +35,7 @@ def solve_nqueens(n):
 
 
 def main():
-    """Main function to handle input and output."""
+    """Main function that handles input and output."""
     if len(sys.argv) != 2:
         print("Usage: nqueens N")
         sys.exit(1)
